@@ -24,18 +24,18 @@ while (option != 'q'){
 var list = prompt(chalk.yellow('Which list do you want to edit? (p)lay, (h)ome, (w)ork '));
 var add = prompt(chalk.grey('What would you like to add? '));
   if (list === 'p' ){
-    play.push(add)
+    play.push(add);
   }else if(list === 'h'){
-    home.push(add)
+    home.push(add);
   }else{
-    work.push (add)
+    work.push (add);
   }
   option = prompt('Do you want to (a)dd or (q)uit? ');
 }
 
 //Print out lists:
 console.log('')
-console.log('YOUR TASKS:')
+console.log(chalk.white.bold.underline('YOUR TASKS:'));
 console.log(chalk.red('These tasks are on your ') +chalk.red.bold.underline('PLAY')+chalk.red(' list:'));
 for (i=0; i<play.length; i++){
 console.log(chalk.red('   *  '+play[i]));
