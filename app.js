@@ -13,9 +13,9 @@ var prompt = require('sync-prompt').prompt;
 var chalk = require('chalk');
 
 //arrays
-var play=[];
-var home = [];
+var play =[];
 var work = [];
+var home = [];
 
 var option = prompt('Do you want to (a)dd or (q)uit? ');
 
